@@ -1,0 +1,6 @@
+{% extends 'qrservice/base.html' %}
+{% block content %}
+{% for qrcode in object_list %}
+<img src="{{qrcode.image.url}}"/>
+{% endfor %}
+{% endblock content %}
